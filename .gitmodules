@@ -1,0 +1,3 @@
+[submodule "service-oriented-architecture"]
+	path = service-oriented-architecture
+	url = https://github.com/GulDilin/service-oriented-architecture
