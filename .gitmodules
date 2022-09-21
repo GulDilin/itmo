@@ -10,3 +10,12 @@
 [submodule "software-testing/itmo-software-testing-lab2"]
 	path = software-testing/itmo-software-testing-lab2
 	url = git@github.com:GulDilin/itmo-software-testing-lab2.git
+[submodule "web-labs/itmo-web-programming-lab2-JSP"]
+	path = web-labs/itmo-web-programming-lab2-JSP
+	url = git@github.com:GulDilin/itmo-web-programming-lab2-JSP.git
+[submodule "web-labs/itmo-web-programming-lab4-Spring"]
+	path = web-labs/itmo-web-programming-lab4-Spring
+	url = git@github.com:GulDilin/itmo-web-programming-lab4-Spring.git
+[submodule "web-labs/itmo-web-programming-lab3-JSF"]
+	path = web-labs/itmo-web-programming-lab3-JSF
+	url = git@github.com:GulDilin/itmo-web-programming-lab3-JSF.git
