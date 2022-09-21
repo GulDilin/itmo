@@ -1,3 +1,12 @@
 [submodule "service-oriented-architecture"]
 	path = service-oriented-architecture
 	url = https://github.com/GulDilin/service-oriented-architecture
+[submodule "software-testing/itmo-software-testing-lab3"]
+	path = software-testing/itmo-software-testing-lab3
+	url = git@github.com:GulDilin/itmo-software-testing-lab3.git
+[submodule "software-testing/itmo-software-testing-lab1"]
+	path = software-testing/itmo-software-testing-lab1
+	url = git@github.com:GulDilin/itmo-software-testing-lab1.git
+[submodule "software-testing/itmo-software-testing-lab2"]
+	path = software-testing/itmo-software-testing-lab2
+	url = git@github.com:GulDilin/itmo-software-testing-lab2.git
