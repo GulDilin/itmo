@@ -19,3 +19,6 @@
 [submodule "web-labs/itmo-web-programming-lab3-JSF"]
 	path = web-labs/itmo-web-programming-lab3-JSF
 	url = git@github.com:GulDilin/itmo-web-programming-lab3-JSF.git
+[submodule "os/os_labs"]
+	path = os/os_labs
+	url = git@github.com:GulDilin/os_labs.git
