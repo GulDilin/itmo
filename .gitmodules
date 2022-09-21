@@ -10,3 +10,6 @@
 [submodule "software-testing/itmo-software-testing-lab2"]
 	path = software-testing/itmo-software-testing-lab2
 	url = git@github.com:GulDilin/itmo-software-testing-lab2.git
+[submodule "web-programming"]
+	path = web-programming
+	url = git@github.com:GulDilin/web-programming.git
