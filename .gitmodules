@@ -22,3 +22,9 @@
 [submodule "os/os_labs"]
 	path = os/os_labs
 	url = git@github.com:GulDilin/os_labs.git
+[submodule "cloud-and-fog-computing/itmo-fog-computing-test-storage-api"]
+	path = cloud-and-fog-computing/itmo-fog-computing-test-storage-api
+	url = git@github.com:GulDilin/itmo-fog-computing-test-storage-api.git
+[submodule "cloud-and-fog-computing/itmo-fog-computing-test-storage-ui"]
+	path = cloud-and-fog-computing/itmo-fog-computing-test-storage-ui
+	url = git@github.com:GulDilin/itmo-fog-computing-test-storage-ui.git
