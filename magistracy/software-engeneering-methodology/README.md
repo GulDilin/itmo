@@ -67,7 +67,7 @@ flowchart TD;
 ![Данные](./data.png)
 
 ### Sequence Diagram
-```mirmaid
+```mermaid
 sequenceDiagram
     participant Бани
     participant Лесоповал
