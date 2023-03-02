@@ -28,3 +28,9 @@
 [submodule "cloud-and-fog-computing/itmo-fog-computing-test-storage-ui"]
 	path = cloud-and-fog-computing/itmo-fog-computing-test-storage-ui
 	url = git@github.com:GulDilin/itmo-fog-computing-test-storage-ui.git
+[submodule "business-logic-software-systems/itmo-business-logic-software-systems"]
+	path = business-logic-software-systems/itmo-business-logic-software-systems
+	url = git@github.com:GulDilin/itmo-business-logic-software-systems.git
+[submodule "system-software/minimal-relational-db"]
+	path = system-software/minimal-relational-db
+	url = git@github.com:GulDilin/minimal-relational-db.git
