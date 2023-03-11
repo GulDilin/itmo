@@ -34,3 +34,6 @@
 [submodule "cloud-computing/itmo-fog-computing-test-storage-ui"]
 	path = cloud-computing/itmo-fog-computing-test-storage-ui
 	url = git@github.com:GulDilin/itmo-fog-computing-test-storage-ui.git
+[submodule "magistracy/storage-and-databases/key-value-database"]
+	path = magistracy/storage-and-databases/key-value-database
+	url = git@github.com:GulDilin/key-value-database.git
