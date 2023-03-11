@@ -17,7 +17,7 @@
 
 [Отчёт по лабоработной 2](./report_lab2.pdf)
 
-[Репозиторий с СУБД и индексацией](./key-value-database)
+[Репозиторий с СУБД и индексацией](https://github.com/GulDilin/key-value-database)
 
 ## Лабораторная работа 3
 
