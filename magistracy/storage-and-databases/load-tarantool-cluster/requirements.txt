@@ -1,2 +1,3 @@
 tarantool
 python-dotenv
+requests

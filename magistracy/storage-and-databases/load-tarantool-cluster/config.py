@@ -7,6 +7,7 @@ DB_HOST = os.getenv('DB_HOST', 'localhost')
 DB_PORT = os.getenv('DB_PORT', 3301)
 DB_USER = os.getenv('DB_USER', 'admin')
 DB_PASS = os.getenv('DB_PASS', 'admin')
+APP_URI = os.getenv('APP_URI', 'http://localhost:8081')
 
 spaces = {
     'customer': {

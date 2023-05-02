@@ -37,6 +37,7 @@ local ok, err = cartridge.cfg({
         'cartridge.roles.metrics',
         'app.roles.custom',
         'app.roles.storage',
+        'app.roles.api',
     },
 }, {
     memtx_memory = 40 * 1024 * 1024,

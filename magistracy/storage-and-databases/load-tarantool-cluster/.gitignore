@@ -92,7 +92,7 @@ pyrightconfig.json
 
 
 /venv/
-/venv2/
+/venv*/
 /cluster/
 /monitoring/grafana
 /monitoring/prometheus

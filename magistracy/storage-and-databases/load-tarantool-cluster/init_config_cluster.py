@@ -34,8 +34,16 @@ def main():
         os.path.join(args.path, 'app/roles/storage.lua'),
     )
     shutil.copyfile(
+        os.path.join(CLUSTER_CONFIG_DIR, 'api.lua'),
+        os.path.join(args.path, 'app/roles/api.lua'),
+    )
+    shutil.copyfile(
         os.path.join(CLUSTER_CONFIG_DIR, 'replicasets.yml'),
         os.path.join(args.path, 'replicasets.yml'),
+    )
+    shutil.copyfile(
+        os.path.join(CLUSTER_CONFIG_DIR, 'failover.yml'),
+        os.path.join(args.path, 'failover.yml'),
     )
 
 
