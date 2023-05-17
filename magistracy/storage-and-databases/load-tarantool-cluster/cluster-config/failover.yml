@@ -1,0 +1,6 @@
+mode: stateful
+state_provider: stateboard
+stateboard_params:
+    uri: localhost:4401
+    password: passwd
+failover_timeout: 15
