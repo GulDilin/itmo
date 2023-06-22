@@ -1,15 +1,37 @@
 # Методология программной инженерии (Software engineering methodology)
 
-## Лабораторная работа №1
-
 Идея по автоматизации какой-либо выдуманной системы
 
 ### Тема: Автоматизация производства передвижных бань на курьих ножках в княжестве Новгородском
 
-## Лабораторная работа 2
+[Vision](./vision.pdf)
+[Software Requirements Specification](./Software Requirements Specification.pdf)
+[Glossary](./Glossary.pdf)
+[Risk List](./Risk List.pdf)
+[Use Case Specification](./Use Case Specification.pdf)
 
-Подготовка требований
-Software Requirements Specification
+## Прототип проекта
+
+[Backend](https://github.com/GulDilin/itmo-SEM-back)
+[Frontend](https://github.com/GulDilin/itmo-SEM-front)
+
+Используемые технологии (backend):
+- Python 3.8 (https://www.python.org/downloads/release/python-3810/)
+- FastApi (https://fastapi.tiangolo.com/)
+- poetry >= 1.4.1 (https://python-poetry.org/)
+
+- PostgreSQL (https://www.postgresql.org/)
+- Docker >= 20.10 (for dev) (https://www.docker.com/)
+- Docker compose >= 2.15 (for dev) (https://www.docker.com/)
+- Keycloak 20 (https://www.keycloak.org/)
+
+Используемые технологии (frontend):
+- Vue js 3 (https://vuejs.org/)
+- Vue router (https://router.vuejs.org/)
+- Vite (https://vitejs.dev/)
+- Tailwindcss (https://tailwindcss.com/)
+- Vuetify (https://vuetifyjs.com/en/)
+
 
 ### Идея бизнес процесса
 
