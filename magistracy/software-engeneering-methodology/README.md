@@ -5,15 +5,21 @@
 ### Тема: Автоматизация производства передвижных бань на курьих ножках в княжестве Новгородском
 
 [Vision](./vision.pdf)
+
 [Software Requirements Specification](./Software Requirements Specification.pdf)
+
 [Glossary](./Glossary.pdf)
-[Risk List](./Risk List.pdf)
-[Use Case Specification](./Use Case Specification.pdf)
-[Software Development Plan](./Software Development Plan.pdf)
+
+[Risk List](./Risk+List.pdf')
+
+[Use Case Specification](./Use+Case+Specification.pdf)
+
+[Software Development Plan](./Software+Development+Plan.pdf)
 
 ## Прототип проекта
 
 [Backend](https://github.com/GulDilin/itmo-SEM-back)
+
 [Frontend](https://github.com/GulDilin/itmo-SEM-front)
 
 Используемые технологии (backend):
