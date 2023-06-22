@@ -9,6 +9,7 @@
 [Glossary](./Glossary.pdf)
 [Risk List](./Risk List.pdf)
 [Use Case Specification](./Use Case Specification.pdf)
+[Software Development Plan](./Software Development Plan.pdf)
 
 ## Прототип проекта
 
