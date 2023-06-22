@@ -6,15 +6,19 @@
 
 [Vision](./vision.pdf)
 
-[Software Requirements Specification](./Software Requirements Specification.pdf)
+[Software Requirements Specification](./Software_Requirements_Specification.pdf)
 
 [Glossary](./Glossary.pdf)
 
-[Risk List](./Risk+List.pdf')
+[Risk List](./Risk_List.pdf)
 
-[Use Case Specification](./Use+Case+Specification.pdf)
+[Use Case Specification](./Use_Case_Specification.pdf)
 
-[Software Development Plan](./Software+Development+Plan.pdf)
+[Use Case Diagram drawio](./UseCases.drawio)
+
+[Software Development Plan](./Software_Development_Plan.pdf)
+
+[Software Development Plan Excel table](./Software_Development_Plan.xlsx)
 
 ## Прототип проекта
 
@@ -98,7 +102,7 @@ flowchart TD;
 ![BPMN](./bpmn.png)
 
 ### Описание передаваемых данных
-![Данные](./data.png)
+![Данные](./Data_Model.png)
 
 ### Sequence Diagram
 ```mermaid
