@@ -2,9 +2,9 @@
 
 ## Авторы
 
-- [Евгений Гурин] (https://github.com/GulDilin)
-- [Павел Ефаринов] (https://github.com/PavelEfarinov)
-- [Ксения Камышанская] (https://github.com/kamyshks)
+- [Евгений Гурин](https://github.com/GulDilin)
+- [Павел Ефаринов](https://github.com/PavelEfarinov)
+- [Ксения Камышанская](https://github.com/kamyshks)
 
 Идея по автоматизации какой-либо выдуманной системы
 
