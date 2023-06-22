@@ -37,6 +37,3 @@
 [submodule "magistracy/storage-and-databases/key-value-database"]
 	path = magistracy/storage-and-databases/key-value-database
 	url = git@github.com:GulDilin/key-value-database.git
-[submodule "magistracy/itmo-parallel-computing"]
-	path = magistracy/itmo-parallel-computing
-	url = git@github.com:GulDilin/itmo-parallel-computing.git
