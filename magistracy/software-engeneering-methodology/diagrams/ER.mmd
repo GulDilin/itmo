@@ -1,0 +1,44 @@
+---
+title: Entity relationship
+---
+erDiagram
+    ORDER_TYPE {
+        string name
+        string dep_type
+    }
+    ORDER_TYPE_PARAM {
+        string name
+        string value_type
+        bool required
+    }
+    ORDER_TYPE ||--o{ ORDER_TYPE_PARAM : contains
+
+    ORDER {
+        string status
+        string user_customer
+        string user_implementer
+    }
+    ORDER ||--o| ORDER : parent
+    ORDER_TYPE ||--o{ ORDER : type_of
+
+    ORDER_PARAM_VALUE {
+        string value
+    }
+    ORDER ||--o{ ORDER_PARAM_VALUE : contains
+    ORDER_TYPE_PARAM ||--o{ ORDER_PARAM_VALUE : type_of
+
+    ORDER_CONFIRMATION {
+        string user_id
+        bool signed
+    }
+    ORDER ||--o{ ORDER_CONFIRMATION : contains
+
+    ORDER_STATUS_UPDATE {
+        string id
+        date created_at
+        date updated_at
+        string user_id
+        string old_status
+        string new_status
+    }
+    ORDER ||--o{ ORDER_STATUS_UPDATE : contains

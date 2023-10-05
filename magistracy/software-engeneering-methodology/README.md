@@ -144,3 +144,18 @@ sequenceDiagram
 
     Бани ->> Бани: Передача заказчику
 ```
+
+## Инструменты для создания диаграмм
+
+### Mermaid
+https://github.com/mermaid-js/mermaid-cli
+
+Установка
+```
+npm install -g @mermaid-js/mermaid-cli
+```
+
+Конвертация диаграммы в svg
+```
+mmdc -i input.mmd -o output.svg
+```
