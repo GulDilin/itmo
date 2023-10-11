@@ -3,42 +3,57 @@ title: Entity relationship
 ---
 erDiagram
     ORDER_TYPE {
-        string name
-        string dep_type
+        uuid id
+        date created_at
+        date updated_at
+        varchar(50) name
+        varchar(50) dep_type
     }
     ORDER_TYPE_PARAM {
-        string name
-        string value_type
+        uuid id
+        date created_at
+        date updated_at
+        varchar(50) name
+        varchar(50) value_type
         bool required
     }
     ORDER_TYPE ||--o{ ORDER_TYPE_PARAM : contains
 
     ORDER {
-        string status
-        string user_customer
-        string user_implementer
+        uuid id
+        date created_at
+        date updated_at
+        varchar(50) status
+        uuid user_customer_id
+        uuid user_implementer_id
     }
     ORDER ||--o| ORDER : parent
     ORDER_TYPE ||--o{ ORDER : type_of
 
     ORDER_PARAM_VALUE {
-        string value
+        uuid id
+        date created_at
+        date updated_at
+        varchar(100) value
     }
     ORDER ||--o{ ORDER_PARAM_VALUE : contains
     ORDER_TYPE_PARAM ||--o{ ORDER_PARAM_VALUE : type_of
 
     ORDER_CONFIRMATION {
-        string user_id
+        uuid id
+        date created_at
+        date updated_at
+        uuid user_id
         bool signed
     }
     ORDER ||--o{ ORDER_CONFIRMATION : contains
 
     ORDER_STATUS_UPDATE {
-        string id
+        uuid id
         date created_at
         date updated_at
-        string user_id
-        string old_status
-        string new_status
+        uuid user_id
+        varchar(50) old_status
+        varchar(50) new_status
     }
     ORDER ||--o{ ORDER_STATUS_UPDATE : contains
