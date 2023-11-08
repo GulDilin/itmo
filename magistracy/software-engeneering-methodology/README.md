@@ -147,6 +147,17 @@ sequenceDiagram
 
 ## Инструменты для создания диаграмм
 
+### Скрипт экспорта
+
+- Установить draw.io
+- Добавить путь к draw.io в path
+
+
+```shell
+chmod u+x export-diagrams.sh
+./export-diagrams.sh
+```
+
 ### Mermaid
 https://github.com/mermaid-js/mermaid-cli
 
