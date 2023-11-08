@@ -1,0 +1,38 @@
+sequenceDiagram
+    participant Пользователь
+
+    participant Auth Manager
+    participant Keycloak
+    participant KeycloakClient
+    participant Endpoints
+    participant OrderController
+    participant OrderService
+
+    Пользователь ->>+ Endpoints: Запрос на аутентификацию
+
+    Endpoints ->>- Auth Manager: Вызов метода getToken
+    Auth Manager ->>+ KeycloakClient: Вызов метода getAuthTokenBySecret
+
+    KeycloakClient ->>+ Keycloak: Вызов keycloak/auth
+    Keycloak ->>+ Пользователь: Редирект на страницу входа
+    Пользователь ->>- Keycloak: Ввод логина и пароля
+
+    alt
+        Keycloak -->> Пользователь: Неверный логин или пароль
+    end
+
+    Keycloak -->> Пользователь: Редирект на главную страницу
+
+    Keycloak ->>+ KeycloakClient: Передает токен
+    KeycloakClient ->>- Auth Manager: Получен токен
+    Auth Manager ->>+  Endpoints: Получен токен
+
+    Пользователь ->>+ Endpoints: Создание учетной записи для заказчика
+
+    Endpoints ->>- OrderController: Вызов метода create
+    alt
+        OrderController -->> Пользователь: Ошибка заполенния заявки
+    end
+    OrderController ->>+ OrderService: Вызов метода create
+    OrderService ->>- OrderController: Заявка сохранена в бд
+    OrderController ->> Пользователь: Заявка создана
