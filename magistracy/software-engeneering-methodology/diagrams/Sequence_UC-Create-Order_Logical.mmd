@@ -4,6 +4,7 @@ sequenceDiagram
     participant Keycloak
     participant Endpoints
     participant Services
+    participant Postgres
 
     Пользователь ->>+ Endpoints: Запрос на аутентификацию
     Endpoints ->>- External Client: Вызов метода для перехода в keycloak
@@ -20,8 +21,10 @@ sequenceDiagram
 
     Пользователь ->>+ Endpoints: Запрос на создание заявки
     alt
-        Endpoints -->> Пользователь: Ошибка заполенния заявки
+        Endpoints -->> Пользователь: Ошибка заполнения заявки
     end
-    Endpoints ->>- Services: Сохранение заявки
-    Services -->> Endpoints: Заявка сохранена
+    Endpoints ->>+ Services: Сохранение заявки
+    Services ->>+ Postgres: Сохранение заявки в БД
+    Postgres ->>- Services: Успешное сохранение
+    Services ->>- Endpoints: Заявка сохранена
     Endpoints -->> Пользователь: Заявка передан на сборку

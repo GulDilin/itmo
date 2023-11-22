@@ -1,12 +1,12 @@
 sequenceDiagram
     participant Пользователь
-
     participant Auth Manager
     participant Keycloak
     participant KeycloakClient
     participant Endpoints
     participant OrderController
     participant OrderService
+    participant Postrges
 
     Пользователь ->>+ Endpoints: Запрос на аутентификацию
 
@@ -18,7 +18,7 @@ sequenceDiagram
     Пользователь ->>- Keycloak: Ввод логина и пароля
 
     alt
-        Keycloak -->> Пользователь: Неверный логин или пароль
+        Keycloak -->> Пользователь:ерный логин или пароль
     end
 
     Keycloak -->> Пользователь: Редирект на главную страницу
@@ -31,8 +31,10 @@ sequenceDiagram
 
     Endpoints ->>- OrderController: Вызов метода create
     alt
-        OrderController -->> Пользователь: Ошибка заполенния заявки
+        OrderController -->> Пользователь: Ошибка заполнения заявки
     end
     OrderController ->>+ OrderService: Вызов метода create
+    OrderService ->>+ Postrges: Сохранение заявки в БД
+    Postrges ->>- OrderService: Успешное сохранение
     OrderService ->>- OrderController: Заявка сохранена в бд
     OrderController ->> Пользователь: Заявка создана
