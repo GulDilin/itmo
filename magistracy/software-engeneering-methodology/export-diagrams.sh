@@ -5,7 +5,7 @@ echo "DIAGRAMS_PATH=$SCRIPTPATH/diagrams"
 cd "$SCRIPTPATH/diagrams"
 
 # Export each drawio file
-for file in $(ls *.drawio); do
+for file in $(ls Collaboration*.drawio); do
   filename=$(basename -- "$file")
   filename="${filename%.*}"
   echo "Process file: $file"
